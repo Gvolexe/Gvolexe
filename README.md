@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Gvol</h1>
-<h3 align="center">A passionate frontend developer from Greece</h3>
+<h3 align="center">A passionate frontend developer from Greece or something like that i dont know</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=gvolexe&label=Profile%20views&color=0e75b6&style=flat" alt="gvolexe" /> </p>
 
