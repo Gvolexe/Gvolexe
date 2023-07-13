@@ -7,8 +7,6 @@
 
 - 🔭 I’m currently working on [fivem license system](https://github.com/Gvolexe/Fivem-script-lisence-system)
 
-- 👯 I’m looking to collaborate on [unirevsals ftc 2023](https://github.com/MrAntony44/ftc_2023)
-
 - 👨‍💻 All of my projects are available at [https://github.com/Gvolexe](https://github.com/Gvolexe)
 
 - 📫 How to reach me **konlepidas@gmail.com**
