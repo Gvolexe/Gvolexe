@@ -1,5 +1,5 @@
 # 💫 About Me:
-🌀 I am a member of FGC Team Greece<br>🤖 I am the Lead Programmer for FTC team #22043<br>🛡 I am currently working on a discord anti-nuke bot<br>🌱I am learning networking<br>💬Ask me about anything
+🌀 I am a member of FGC Team Greece<br>🤖 I am the Lead Programmer for FTC team #22043<br>🛡 I am currently working on a Github discord integration<br>🌱I am learning networking<br>💬Ask me about anything
 
 
 ## 🌐 Socials:
