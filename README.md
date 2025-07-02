@@ -1,7 +1,3 @@
-# 💫 About Me:
-🌀 I am a member of FGC Team Greece<br>🤖 I am the Lead Programmer for FTC team #22043<br>🛡 I am currently working on a Github discord integration<br>🌱I am learning networking<br>💬Ask me about anything
-
-
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.com/users/1089213212513280040) 
 
