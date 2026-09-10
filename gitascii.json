@@ -1,0 +1,156 @@
+{
+  "username": "Gvolexe",
+  "widgets": [
+    {
+      "widgetId": "header",
+      "name": "Header Widget",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 800,
+        "height": 90
+      },
+      "config": {
+        "hideBorder": true
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 1,
+      "instanceId": "widget_1789068222404_0"
+    },
+    {
+      "widgetId": "avatar",
+      "name": "Avatar Widget",
+      "position": {
+        "x": 0,
+        "y": 106
+      },
+      "size": {
+        "width": 158,
+        "height": 158
+      },
+      "config": {},
+      "locked": false,
+      "visible": true,
+      "zIndex": 2,
+      "instanceId": "widget_1789068222404_1"
+    },
+    {
+      "widgetId": "bio",
+      "name": "Bio Widget",
+      "position": {
+        "x": 166,
+        "y": 106
+      },
+      "size": {
+        "width": 634,
+        "height": 150
+      },
+      "config": {
+        "customBio": "Hi, I am George, a full-stack developer from Greece. I am currently working at Novacloud-Hosting as a Developer.",
+        "showTitle": false,
+        "customTitle": "g",
+        "lockAspectRatio": false
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 3,
+      "instanceId": "widget_1789068222404_2"
+    },
+    {
+      "widgetId": "tech-stack",
+      "name": "Tech-stack Widget",
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "size": {
+        "width": 800,
+        "height": 140
+      },
+      "config": {
+        "selectedTechs": [
+          "ts",
+          "js",
+          "html",
+          "css",
+          "sass",
+          "bash",
+          "vue",
+          "cs",
+          "php",
+          "py",
+          "java",
+          "ruby",
+          "c",
+          "cpp",
+          "docker",
+          "github",
+          "nextjs",
+          "mysql",
+          "go"
+        ]
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 4,
+      "instanceId": "widget_1789068222404_3"
+    },
+    {
+      "widgetId": "github-readme-stats",
+      "name": "Github-readme-stats Widget",
+      "position": {
+        "x": 0,
+        "y": 428
+      },
+      "size": {
+        "width": 390,
+        "height": 210
+      },
+      "config": {
+        "hideBorder": false,
+        "hideDecorations": false,
+        "showTitle": false
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 5,
+      "instanceId": "widget_1789068222404_4"
+    },
+    {
+      "widgetId": "streak-stats",
+      "name": "Streak-stats Widget",
+      "position": {
+        "x": 410,
+        "y": 428
+      },
+      "size": {
+        "width": 390,
+        "height": 210
+      },
+      "config": {
+        "showTitle": false
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 6,
+      "instanceId": "widget_1789068222404_5"
+    }
+  ],
+  "globalStyles": {
+    "backgroundColor": "#09090b",
+    "textColor": "#f4f4f5",
+    "accentColor": "#a1a1aa",
+    "borderColor": "#27272a",
+    "fontFamily": "'Inter Tight', sans-serif",
+    "borderRadius": 12,
+    "padding": 24,
+    "themeMode": "dark",
+    "templateStyle": "bento_grid",
+    "transparentBackground": false
+  },
+  "templateId": "bento_grid",
+  "profileSlug": "default"
+}
