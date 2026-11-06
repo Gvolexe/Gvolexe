@@ -62,15 +62,9 @@
 - 🌾 **[Replanish](https://github.com/Gvolexe/ReplanishEnchantment)** <img src="assets/icons/chips/kotlin.svg" width="62" height="20" alt="Kotlin" title="Kotlin"><br>Minecraft plugin and mod: harvest a mature crop with a Replanish hoe and it replants itself
 - 🤖 **[RevTickCalculator](https://github.com/Gvolexe/RevTickCalculator)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"><br>Encoder tick calculator for FTC and FGC robots, written with Georgemech
 
-# 📊 GitHub Stats:
-![Gvol's GitHub stats](https://github-readme-stats.shion.dev/api?username=Gvolexe&theme=catppuccin_mocha&hide_border=false&count_private=true) ![Most used languages](https://github-readme-stats.shion.dev/api/top-langs/?username=Gvolexe&theme=catppuccin_mocha&hide_border=false&include_all_commits=true&count_private=true&layout=compact)<br/>
-![GitHub streak](https://streak-stats.demolab.com/?user=Gvolexe&theme=catppuccin_mocha&hide_border=false)
-
-## 🏆 GitHub Trophies
-![GitHub trophies](https://trophygithubreadmelang.cybee.dpdns.org/?username=Gvolexe&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+# 📊 GitHub activity
+![GitHub profile metrics](assets/profile-metrics.svg)<br>
+<sub>Refreshed daily by GitHub Actions with gh-metrics/metrics. The contribution calendar covers the past year.</sub>
 
 ### ✍️ Random Dev Quote
 ![Random dev quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Contribution Stats
-![Contribution stats](assets/contribution-stats.svg)
