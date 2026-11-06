@@ -4,8 +4,7 @@
 
 # 💫 About Me:
 🛠️ I work at [Novacloud](https://novacloud-hosting.com), [Galenius Nodes](https://www.galeniusnodes.com/) and [MellonLab](https://mellonlab.org/)<br>
-🌍 I run [AS218429](https://bgp.tools/as/218429): BGP over IPv4 and IPv6, RIPE reverse DNS and Technitium zones. It is the backbone behind Ruxora and Galenius Nodes<br>
-🗺️ I build the AS218429 tools: [syncgeo](https://github.com/ASN218429/scripts), the [geofeed](https://github.com/ASN218429/geofeed) and the [network website](https://github.com/ASN218429/website)<br>
+🌍 I run [AS218429](https://bgp.tools/as/218429), my own network<br>
 🖥️ I focus on hosting infrastructure, networks and automation<br>
 🎓 I am currently studying Business Administration
 
@@ -36,26 +35,31 @@
   <img src="assets/icons/cards/githubactions.svg" width="88" height="100" alt="GitHub Actions" title="GitHub Actions">
 </p>
 
-![BGP AS218429](https://img.shields.io/badge/BGP-AS218429-fab387?style=for-the-badge&labelColor=1e1e2e) ![IPv4 and IPv6](https://img.shields.io/badge/IPv4%20%2B%20IPv6-94e2d5?style=for-the-badge) ![RIPE reverse DNS](https://img.shields.io/badge/RIPE-reverse%20DNS-89dceb?style=for-the-badge&labelColor=1e1e2e) ![Technitium DNS](https://img.shields.io/badge/Technitium-DNS-89b4fa?style=for-the-badge&labelColor=1e1e2e) ![Pterodactyl](https://img.shields.io/badge/Pterodactyl-10539F?style=for-the-badge&logo=pterodactyl&logoColor=white) ![Pelican](https://img.shields.io/badge/Pelican-panel-74c7ec?style=for-the-badge&labelColor=1e1e2e) ![Convoy](https://img.shields.io/badge/Convoy-panel-b4befe?style=for-the-badge&labelColor=1e1e2e) ![Paymenter](https://img.shields.io/badge/Paymenter-billing-cba6f7?style=for-the-badge&labelColor=1e1e2e) ![WHMCS](https://img.shields.io/badge/WHMCS-billing-f5c2e7?style=for-the-badge&labelColor=1e1e2e) ![RIPEstat](https://img.shields.io/badge/RIPEstat-prefixes-74c7ec?style=for-the-badge&labelColor=1e1e2e) ![RFC 8805 geofeed](https://img.shields.io/badge/RFC%208805-geofeed-f9e2af?style=for-the-badge&labelColor=1e1e2e)
+🖥️ Proxmox VE clusters and VMs, provisioned with Ansible, with guest IP pools and bridged networking<br>
+☁️ Cloudflare Workers host the geofeed and network website; GitHub Actions validates and deploys the geofeed
 
-- 🖥️ **Proxmox VE** clusters and VMs, provisioned with Ansible, with guest IP pools and bridged networking
-- 🌍 **AS218429**: IPv4 and IPv6 announcements, RIPE reverse DNS delegations, Technitium authoritative and reverse zones
-- 🗺️ **Geofeed and network metadata**: RFC 8805 geofeed and JSON prefix metadata for the prefixes RIPEstat sees announced, managed with syncgeo and deployed to a Cloudflare Worker by GitHub Actions
-- 💳 **Panels and billing**: Paymenter, Pelican, Convoy, Pterodactyl/Calagopus and WHMCS integrations
-- 🐧 **Linux over SSH**: host inventory, auditing, DNS/TLS checks and backups with GvolTools
+**🌍 [AS218429](https://bgp.tools/as/218429) · my network**<br>
+![BGP](https://img.shields.io/badge/BGP-fab387) ![IPv4](https://img.shields.io/badge/IPv4-fab387) ![IPv6](https://img.shields.io/badge/IPv6-fab387)<br>
+Backbone for Ruxora and Galenius Nodes, announced over BGP on IPv4 and IPv6
+
+**🧭 DNS & addressing**<br>
+[![Technitium DNS](https://img.shields.io/badge/Technitium-DNS-89dceb?labelColor=1e1e2e)](https://technitium.com/dns/) [![RIPE reverse DNS](https://img.shields.io/badge/RIPE-reverse%20DNS-89dceb?labelColor=1e1e2e)](https://www.ripe.net/)<br>
+Authoritative and reverse zones on Technitium, with reverse DNS delegated through RIPE
+
+**🛠️ Network & server tools**<br>
+[![syncgeo](https://img.shields.io/badge/syncgeo-geofeed%20workbench-f9e2af?labelColor=1e1e2e)](https://github.com/ASN218429/scripts) [![geofeed, RFC 8805](https://img.shields.io/badge/geofeed-RFC%208805-f9e2af?labelColor=1e1e2e)](https://github.com/ASN218429/geofeed) [![RIPEstat prefix data](https://img.shields.io/badge/RIPEstat-prefix%20data-f9e2af?labelColor=1e1e2e)](https://stat.ripe.net/AS218429) [![GvolTools](https://img.shields.io/badge/GvolTools-server%20CLI-f9e2af?labelColor=1e1e2e)](https://github.com/Gvolexe/GvolTools)<br>
+syncgeo pulls prefix data from RIPEstat to build the geofeed; each tool is described under [Projects](#-projects)
 
 ## 🚀 Projects:
 **🌍 ASN tools**
 
-- 🧭 **[syncgeo](https://github.com/ASN218429/scripts)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"> <img src="assets/icons/chips/githubactions.svg" width="111" height="20" alt="GitHub Actions" title="GitHub Actions"><br>Dependency-free terminal workbench for the AS218429 geofeed: finds the announced prefixes visible in RIPEstat, splits them into location blocks you assign explicitly, validates countries, regions and coverage, then writes the RFC 8805 feed with dry runs and atomic saves. Splitting never changes BGP announcements
-- 📡 **[geofeed](https://github.com/ASN218429/geofeed)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"> <img src="assets/icons/chips/cloudflareworkers.svg" width="132" height="20" alt="Cloudflare Workers" title="Cloudflare Workers"> <img src="assets/icons/chips/githubactions.svg" width="111" height="20" alt="GitHub Actions" title="GitHub Actions"><br>RFC 8805 CSV and JSON network and prefix metadata, served from a Cloudflare Worker at [cdn.as218429.net](https://cdn.as218429.net) after GitHub Actions validation
-- 🌐 **[website](https://github.com/ASN218429/website)** <img src="assets/icons/chips/cloudflareworkers.svg" width="132" height="20" alt="Cloudflare Workers" title="Cloudflare Workers"> <img src="assets/icons/chips/githubactions.svg" width="111" height="20" alt="GitHub Actions" title="GitHub Actions"><br>The AS218429 network website on Cloudflare Workers, with operator contacts and registry and geofeed links
+- 🧭 **[syncgeo](https://github.com/ASN218429/scripts)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"> <img src="assets/icons/chips/githubactions.svg" width="111" height="20" alt="GitHub Actions" title="GitHub Actions"><br>Dependency-free terminal workbench: finds the prefixes RIPEstat sees, lets you assign and split their location blocks, validates them and writes RFC 8805 and JSON. Splits change locations, never BGP announcements
+- 📡 **[geofeed](https://github.com/ASN218429/geofeed)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"> <img src="assets/icons/chips/cloudflareworkers.svg" width="132" height="20" alt="Cloudflare Workers" title="Cloudflare Workers"> <img src="assets/icons/chips/githubactions.svg" width="111" height="20" alt="GitHub Actions" title="GitHub Actions"><br>The public RFC 8805 geofeed and network JSON, served at [cdn.as218429.net](https://cdn.as218429.net)
+- 🌐 **[website](https://github.com/ASN218429/website)** <img src="assets/icons/chips/cloudflareworkers.svg" width="132" height="20" alt="Cloudflare Workers" title="Cloudflare Workers"> <img src="assets/icons/chips/githubactions.svg" width="111" height="20" alt="GitHub Actions" title="GitHub Actions"><br>The AS218429 network website, with operator contacts and registry and geofeed links
 
-**🧰 Hosting tools**
+**🧰 Server tools**
 
-- 🔧 **[GvolTools](https://github.com/Gvolexe/GvolTools)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"><br>CLI toolkit for SSH-managed servers: host hardening, SSH auditing, key management, DNS checks and host inventory
-- 🦅 **[Pelican × Paymenter](https://github.com/Gvolexe/PelicanExtentionPaymenter)** <img src="assets/icons/chips/php.svg" width="54" height="20" alt="PHP" title="PHP"><br>Paymenter extension that creates, suspends, upgrades and terminates Pelican servers, with node tags and port ranges
-- 🪙 **[NowPayments](https://github.com/Gvolexe/NowPayments)** <img src="assets/icons/chips/php.svg" width="54" height="20" alt="PHP" title="PHP"><br>Crypto checkout gateway for Paymenter with HMAC-signed IPN callbacks and invoice status updates
+- 🔧 **[GvolTools](https://github.com/Gvolexe/GvolTools)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"><br>CLI tools for SSH-managed servers: host inventory, hardening and audits, key management, DNS/TLS checks and backups
 
 **🎨 Side projects**
 

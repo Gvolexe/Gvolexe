@@ -34,5 +34,5 @@ and the variants were checked against `devicon.json` at the same commit.
 Devicon's MIT license covers the icon files. The logos remain trademarks of their
 owners and appear here only to name the technology.
 
-Devicon has no icons for Technitium, Pterodactyl, Pelican, Convoy, Paymenter or WHMCS,
+Devicon has no icons for Technitium, RIPE, RIPEstat or the AS218429 tools,
 so the README keeps their shields.io badges.
