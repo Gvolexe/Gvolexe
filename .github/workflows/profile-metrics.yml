@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Generate profile stats, languages, streak and achievements
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        uses: gh-metrics/metrics@0252603d89e89b96f0413c3cb6b0649b64387ba9
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
@@ -42,4 +42,5 @@ jobs:
           plugins_errors_fatal: yes
           config_animations: no
           retries: 1
-          debug: yes
+          retries_delay: 0
+          debug: no
