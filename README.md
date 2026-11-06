@@ -54,4 +54,4 @@
 ![Random dev quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ### 🔝 Contribution Stats
-![Contribution stats](https://github-contribution-stats.vercel.app/api?username=Gvolexe&limit=5&theme=dark&combine_all_yearly_contributions=true)
+![Contribution stats](assets/contribution-stats.svg)
