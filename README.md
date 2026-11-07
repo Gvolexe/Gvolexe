@@ -67,7 +67,13 @@ syncgeo pulls prefix data from RIPEstat to build the geofeed; each tool is descr
 - 🤖 **[RevTickCalculator](https://github.com/Gvolexe/RevTickCalculator)** <img src="assets/icons/chips/python.svg" width="68" height="20" alt="Python" title="Python"><br>Encoder tick calculator for FTC and FGC robots, written with Georgemech
 
 # 📊 GitHub activity
-![GitHub profile metrics](assets/profile-metrics.svg)<br>
+![GitHub profile metrics](assets/profile-metrics.svg)
+
+### 🏆 Achievements
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/activity-badges-mobile.svg">
+  <img src="assets/activity-badges.svg" alt="Pixel-art GitHub achievement badges showing each achievement's rank, name, count and description, from the same daily Metrics data" width="720">
+</picture><br>
 <sub>Refreshed daily by GitHub Actions with gh-metrics/metrics. The contribution calendar covers the past year.</sub>
 
 ### ✍️ Random Dev Quote
