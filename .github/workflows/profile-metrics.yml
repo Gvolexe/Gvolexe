@@ -7,6 +7,9 @@ on:
   push:
     paths:
       - .github/workflows/profile-metrics.yml
+      - scripts/build_activity_badges.py
+      - scripts/pixel_badges.py
+      - assets/icons/pixelarticons/**
 
 permissions:
   contents: write
@@ -18,15 +21,17 @@ concurrency:
 jobs:
   metrics:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
-      - name: Generate profile stats, languages, streak and achievements
+      - uses: actions/checkout@v4
+      - name: Collect Metrics data for achievement badges
         uses: gh-metrics/metrics@0252603d89e89b96f0413c3cb6b0649b64387ba9
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: Gvolexe
-          filename: assets/profile-metrics.svg
+          filename: .build/profile-metrics-source.svg
+          output_action: none
           template: classic
           base: header, activity, repositories, metadata
           repositories_forks: no
@@ -44,3 +49,41 @@ jobs:
           retries: 1
           retries_delay: 0
           debug: no
+      - name: Render Pixel arcade badges
+        run: python3 scripts/build_activity_badges.py /metrics_renders/.build/profile-metrics-source.svg --output-dir assets
+      - name: Generate the profile card without the default achievements
+        uses: gh-metrics/metrics@0252603d89e89b96f0413c3cb6b0649b64387ba9
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: Gvolexe
+          filename: assets/profile-metrics.svg
+          output_action: none
+          template: classic
+          base: header, activity, repositories, metadata
+          repositories_forks: no
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_achievements: no
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 8
+          config_timezone: Europe/Athens
+          config_order: base.header, base.activity, base.repositories, languages, isocalendar, base.metadata
+          plugins_errors_fatal: yes
+          config_animations: no
+          retries: 1
+          retries_delay: 0
+          debug: no
+      - name: Publish generated profile assets
+        run: |
+          cp /metrics_renders/assets/profile-metrics.svg assets/profile-metrics.svg
+          git add assets/profile-metrics.svg assets/activity-badges.svg assets/activity-badges-mobile.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh profile metrics and Pixel arcade badges'
+          git push
